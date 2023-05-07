@@ -18,7 +18,7 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="🦁Gʀᴏᴜᴘ🦁", url=client.invitelink2),
+                InlineKeyboardButton(text="🦁Gʀᴏᴜᴘ🦁", url="https://tinyfy.in/5sPLaYM"),
             ],
             [
                 InlineKeyboardButton(text="😙Hᴇʟᴘ😙", callback_data="help"),
@@ -29,7 +29,7 @@ def start_button(client):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ 𝟷", url=client.invitelink),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ 𝟷", url="https://tinyfy.in/5sPLaYM"),
             ],
             [
                 InlineKeyboardButton(text="👾Hᴇʟᴘ👾", callback_data="help"),
@@ -55,7 +55,7 @@ def fsub_button(client, message):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟸", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟸", url="https://tinyfy.in/5sPLaYM"),
             ],
         ]
         try:
@@ -73,7 +73,7 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟷", url=client.invitelink),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟷", url="https://tinyfy.in/5sPLaYM"),
             ],
         ]
         try:
