@@ -5,7 +5,7 @@ from bot import Bot
 import pyshorteners
 
 
-@Bot.on_message(filters.command("shorturll"))
+@Bot.on_message(filters.command("shortlink"))
 async def urlshortner(client, message):
     msg_text = message.text
     if len(msg_text.split(" ")) < 2:
@@ -13,7 +13,7 @@ async def urlshortner(client, message):
             f"Please give me link to create a shortlink!"
         )
         return
-    url = msg.text.split(None, 1)[1]
+    url = msg_text.split(None, 1)[1]
     shortener = pyshorteners.Shortener()
     short_url = shortener.tinyurl.short(url)
     await message.reply_text(
