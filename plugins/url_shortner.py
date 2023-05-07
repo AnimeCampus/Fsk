@@ -5,7 +5,7 @@ from bot import Bot
 import pyshorteners
 
 
-@Bot.on_message(filters.command("shorturl"))
+@Bot.on_message(filters.command("shorturll"))
 async def urlshortner(client, message):
     msg_text = message.text
     if len(msg_text.split(" ")) < 2:
