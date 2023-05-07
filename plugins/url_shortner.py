@@ -17,5 +17,5 @@ async def urlshortner(client, message):
     shortener = pyshorteners.Shortener()
     short_url = shortener.tinyurl.short(url)
     await message.reply_text(
-        f"Here is your short link\n: <code>{url}</code>"
+        f"Here is your short link\n: <code>{short_url}</code>"
     )
