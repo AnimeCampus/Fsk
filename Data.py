@@ -49,11 +49,11 @@ class Data:
     ABOUT = """
 <b>About this Bot:
 
- @Anime_Campus_Bot is a Telegram Bot for storing posts or files that can be accessed via a special link.
+ @Pocket_fm_team_1 is a Telegram Bot for storing posts or files that can be accessed via a special link.
 
   • Creator: @MH17_KUNAL
   • Framework: Pyrograms
-  • Channel :@Campus_Bot_Updates
+  • Channel :@Pocket_fm_team_1
 
- 👨‍💻 Developed by @Anime_Campus
+ 👨‍💻 Developed by @Manager_000
 """
