@@ -1,12 +1,10 @@
 import requests
+from bot import Bot
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-# Initialize your Pyrogram client here
-Bot = Client("my_bot")
-
 # Replace with your actual bot username
-BOT_USERNAME = "your_bot_username"
+BOT_USERNAME = "GeniusHubMusicBot"
 
 # Function to shorten a URL using easysky.in API
 def shorten_url(url):
