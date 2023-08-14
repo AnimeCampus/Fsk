@@ -10,7 +10,7 @@ BOT_USERNAME = "your_bot_username"
 
 # Function to shorten a URL using easysky.in API
 def shorten_url(url):
-    api_key = "YOUR_EASYSKY.IN_API_KEY"
+    api_key = "26900f01070d5c9fcdd9ece883701597c9b302c1"
     api_url = f"https://easysky.in/api/v1/shorten?key={api_key}&url={url}"
     
     response = requests.get(api_url)
