@@ -10,30 +10,30 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="😙Hᴇᴋᴘ😙", callback_data="help"),
-                InlineKeyboardButton(text="🍁Cʟᴏsᴇ🍁", callback_data="close"),
+                InlineKeyboardButton(text="help", callback_data="help"),
+                InlineKeyboardButton(text="Close ", callback_data="close"),
             ],
         ]
         return buttons
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="🦁Gʀᴏᴜᴘ🦁", url="https://tinyfy.in/5sPLaYM"),
+                InlineKeyboardButton(text="Group", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="😙Hᴇʟᴘ😙", callback_data="help"),
-                InlineKeyboardButton(text="🍁Cʟᴏsᴇ🍁", callback_data="close"),
+                InlineKeyboardButton(text="help", callback_data="help"),
+                InlineKeyboardButton(text="Close", callback_data="close"),
             ],
         ]
         return buttons
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ 𝟷", url="https://tinyfy.in/5sPLaYM"),
+                InlineKeyboardButton(text="Channel", url=client.invitelink),
             ],
             [
-                InlineKeyboardButton(text="👾Hᴇʟᴘ👾", callback_data="help"),
-                InlineKeyboardButton(text="🍁Cʟᴏsᴇ🍁", callback_data="close"),
+                InlineKeyboardButton(text="help", callback_data="help"),
+                InlineKeyboardButton(text="Close", callback_data="close"),
             ],
         ]
         return buttons
@@ -43,10 +43,10 @@ def start_button(client):
                 InlineKeyboardButton(text="Help", callback_data="help"),
             ],
             [
-                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ 𝟷", url=client.invitelink),
-                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ 𝟸", url=client.invitelink2),
+                InlineKeyboardButton(text="Channel 1", url=client.invitelink),
+                InlineKeyboardButton(text="Channel 2", url=client.invitelink2),
             ],
-            [InlineKeyboardButton(text="🍁Cʟᴏsᴇ🍁", callback_data="close")],
+            [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close")],
         ]
         return buttons
 
@@ -55,14 +55,14 @@ def fsub_button(client, message):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟸", url="https://tinyfy.in/5sPLaYM"),
+                InlineKeyboardButton(text="Join Channel 2", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ʀᴇsᴛᴀʀᴛ",
+                        text="Restart",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -73,14 +73,14 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟷", url="https://tinyfy.in/5sPLaYM"),
+                InlineKeyboardButton(text="Channel 1", url=client.invitelink),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ʀᴇsᴛᴀʀᴛ",
+                        text="Restart",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -91,15 +91,15 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟷", url=client.invitelink),
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟸", url=client.invitelink2),
+                InlineKeyboardButton(text="Channel 1", url=client.invitelink),
+                InlineKeyboardButton(text="Channel 2", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ʀᴇsᴛᴀʀᴛ ",
+                        text="Restart ",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
